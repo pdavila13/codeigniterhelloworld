@@ -12,6 +12,16 @@ class Simpatic extends CI_Controller {
 		$this->load->view ('saluda');
 	}
 	
+	public function saluda_2() {
+		$data = array();
+		
+		$name = $this->input->get('name');
+
+		$data['name'] = $name;
+		
+		$this->load->view('saluda',$data);
+	}
+	
 	public function saluda($name){
 		$data = array();
 		
