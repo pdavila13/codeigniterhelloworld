@@ -14,6 +14,10 @@ class Simpatic extends CI_Controller {
 	
 	public function saluda_2() {
 		$data = array();
+		// Controls derrors
+		echo $_GET;
+
+		//var_export($_GET);
 		
 		$name = $this->input->get_post('name');
 
