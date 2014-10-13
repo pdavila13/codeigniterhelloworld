@@ -17,7 +17,11 @@ class Simpatic extends CI_Controller {
 		// Controls derrors
 		//echo $_GET;
 
-		var_export($_GET);
+		//var_export($_GET);
+
+		//var_dump($_GET);
+
+		print_r($_GET);
 		
 		$name = $this->input->get_post('name');
 
