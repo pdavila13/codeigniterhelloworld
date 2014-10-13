@@ -16,7 +16,13 @@ class Simpatic extends CI_Controller {
 	}
 
 	public function form_example() {
+
 		$data = array();
+
+		if (isset($_POST)) {
+			$data['firstname'] = $this->input->post("firstname");
+			$data['lastname'] = $this->input->post("lastname");
+		}
 
 		$this->load->view('form_example',$data);
 	}
@@ -25,11 +31,8 @@ class Simpatic extends CI_Controller {
 		$data = array();
 		// Controls derrors
 		//echo $_GET;
-
 		//var_export($_GET);
-
 		var_dump($_GET);
-
 		//print_r($_GET);
 		
 		$name = $this->input->get_post('name');
