@@ -5,6 +5,9 @@ class Simpatic extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->config->load('codeigniterhelloworld');
+
+		// Seguint el manual hem de carregar el helper al constructor.
+		$this->load->helper('url');
 	}
 	
 	public function index()
