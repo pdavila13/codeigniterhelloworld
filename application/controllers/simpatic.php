@@ -15,7 +15,7 @@ class Simpatic extends CI_Controller {
 	public function saluda_2() {
 		$data = array();
 		
-		$name = $this->input->post('name');
+		$name = $this->input->get_post('name');
 
 		$data['name'] = $name;
 		
